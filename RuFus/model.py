@@ -1,16 +1,13 @@
 from .tools import *
-import yaml
+from .prompts import SYS_PROMPT
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 
 def gpt_agent(instructions, url, openai_api_key):
-    with open("prompts.yaml", 'r') as file:
-            sys_pmt = yaml.safe_load(file)
-
     tools = [get_sitemap]
     prompt = ChatPromptTemplate.from_messages([
-            ("system",sys_pmt["sys_prompt"] ),
+            ("system",SYS_PROMPT ),
             ("user", "{input}"),
             ("placeholder", "{agent_scratchpad}"),
         ])

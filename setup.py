@@ -29,8 +29,7 @@ setup(
     "openai==1.52.0",
     "xmltodict==0.14.2",
     "beautifulsoup4==4.12.3",
-    "langchain_core==0.3.12",
-    "PyYAML==6.0.2"
+    "langchain_core==0.3.12"
     ],
     classifiers=[
         "Development Status :: 1 - Planning",

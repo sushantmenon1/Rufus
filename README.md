@@ -32,15 +32,15 @@ The Rufus Client is a Python interface that interacts with the Rufus API to scra
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/rufus-client.git
+   git clone https://github.com/sushantmenon1/Rufus.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd rufus-client
+   cd Rufus
    ```
 3. Install the required dependencies:
    ```bash
-   pip install -r requirements.txt
+   pip install -e .
    ```
 
 ## Hosting the FastAPI API Locally
@@ -49,12 +49,12 @@ Before using the `RufusClient`, you need to host the FastAPI API locally. Follow
 
 1. Ensure you have FastAPI and Uvicorn installed:
    ```bash
-   pip install fastapi uvicorn
+   pip install fastapi
    ```
 
 2. Run the FastAPI application locally:
    ```bash
-   fastapi dev api.py
+   fastapi dev RuFus/api.py
    ```
 
    This will start the FastAPI server at `http://127.0.0.1:8000`.

@@ -1,7 +1,3 @@
-Here's the updated README file with instructions to host the FastAPI API locally before using the `RufusClient`.
-
----
-
 # Rufus Client
 
 ## Project Overview

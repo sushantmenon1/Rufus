@@ -28,7 +28,7 @@ The Rufus Client is a Python interface that interacts with the Rufus API to scra
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-repo/rufus-client.git](https://github.com/sushantmenon1/Rufus.git)
+   git clone https://github.com/sushantmenon1/Rufus.git
    ```
 2. Navigate to the project directory:
    ```bash

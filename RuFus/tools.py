@@ -59,5 +59,6 @@ def get_sitemap(url):
   if content is not None:
     sitemap = xmltodict.parse(content)
     found_list = find_list_in_nested_dict(sitemap)
-    url_list.extend([url['loc'] for url in found_list])
+    if found_list:
+        url_list.extend([url['loc'] for url in found_list])
   return url_list

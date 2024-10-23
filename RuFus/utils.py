@@ -29,9 +29,4 @@ def web_scrape(url):
   soup = BeautifulSoup(requests.get(url).content, 'html.parser')
   text = soup.get_text(separator='\n', strip=True).split('\n')
   content = " ".join([i for i in text if len(i.split()) > 3])
-  data = {
-        "url": url,
-        "content": content
-    }
-  save_to_json(data)
   return content

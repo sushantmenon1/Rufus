@@ -45,7 +45,7 @@ Before using the `RufusClient`, you need to host the FastAPI API locally. Follow
 
 1. Ensure you have FastAPI and Uvicorn installed:
    ```bash
-   pip install fastapi
+   pip install "fastapi[standard]"
    ```
 
 2. Run the FastAPI application locally:
